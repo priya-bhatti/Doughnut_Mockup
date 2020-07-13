@@ -17,8 +17,6 @@ body {
 header {
   background-color: rgba(165, 193, 196, 0.3);
   position: fixed;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
   z-index: 50;
   width: 100vw;
   height: 10vh;
