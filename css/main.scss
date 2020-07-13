@@ -209,13 +209,13 @@ section {
     min-height: 100vh;
     padding-top: 12vh;
     height: auto;
-    background: linear-gradient(180deg, rgba(161, 190, 192, 0.58) 0%, rgba(165, 213, 219, 0.58) 100%);
+    background-color: #c7e0e3;
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23cbacca' fill-opacity='1'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(19rem, 400px));
     justify-content: space-around;
     .card {
         position: relative;
-        // height: 50%;
         background: white;
         box-shadow: 0px 13px 17px rgba(0, 0, 0, 0.51);
         border-radius: 27px;
@@ -246,6 +246,50 @@ section {
                 font-size: 2em;
             }
         }
+    }
+}
+
+.parallax {
+    position: relative;
+    background-image: url(../images/donut_stock.png);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: cover;
+}
+
+.about {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    padding: 30px 0 30px 0;
+    background: rgba($color: #ffffff, $alpha: 0.9);
+    h1 {
+        text-align: center;
+        font-size: 24pt;
+    }
+    p {
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: left;
+    }
+}
+
+.contact {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    padding: 30px 30px 30px 30px;
+    background: rgba($color: #ffffff, $alpha: 0.9);
+    text-align: center;
+    h1 {
+        font-size: 24pt;
+    }
+    i {
+        font-size: 24pt;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
     }
 }
 
@@ -318,5 +362,11 @@ section {
             width: 90px;
             height: 90px;
         }
+    }
+}
+
+@media screen and (min-width: 1290px) {
+    .parallax {
+        background-repeat: repeat-x;
     }
 }
