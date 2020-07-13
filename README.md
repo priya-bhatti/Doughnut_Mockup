@@ -1,2 +1,2 @@
-# Doughtnut_Mockup
+# Doughnut_Mockup
 Mockup for a doughnut shop
