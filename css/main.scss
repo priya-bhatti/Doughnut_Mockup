@@ -1,3 +1,7 @@
+html {
+    overflow-x: hidden;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +17,8 @@ body {
 header {
     background-color: rgba($color: #A5C1C4, $alpha: 0.3);
     position: fixed;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     z-index: 50;
     width: 100vw;
     height: 10vh;
@@ -151,11 +157,12 @@ section {
     position: absolute;
     bottom: 0;
     z-index: 1;
+    object-fit: cover;
 }
 
 .arrow {
     position: absolute;
-    z-index: 50;
+    z-index: 5;
     bottom: 1em;
     left: 1em;
 }
@@ -193,6 +200,51 @@ section {
         a {
             text-decoration: none;
             color: #393D3F;
+        }
+    }
+}
+
+.menu {
+    position: relative;
+    min-height: 100vh;
+    padding-top: 12vh;
+    height: auto;
+    background: linear-gradient(180deg, rgba(161, 190, 192, 0.58) 0%, rgba(165, 213, 219, 0.58) 100%);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 400px));
+    justify-content: space-around;
+    .card {
+        position: relative;
+        // height: 50%;
+        background: white;
+        box-shadow: 0px 13px 17px rgba(0, 0, 0, 0.51);
+        border-radius: 27px;
+        text-align: center;
+        padding: 10px 10px;
+        margin: 20px 20px 20px 20px;
+        img {
+            width: 50%;
+        }
+        h1 {
+            font-family: 'Sacramento', cursive;
+            font-size: 24pt;
+        }
+        .plus {
+            position: absolute;
+            z-index: 5;
+            right: -5%;
+            bottom: 0;
+            background: #CBACCA;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.35);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span {
+                font-size: 2em;
+            }
         }
     }
 }
