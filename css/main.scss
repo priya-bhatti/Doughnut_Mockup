@@ -254,7 +254,7 @@
         background-image: url(../images/donut_stock_mobile.png);
         height: 100vh;
         background-size: auto 100%;
-        background-position: center;
+        //background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
@@ -327,6 +327,7 @@
         .parallax {
             background-image: url(../images/donut_stock.png);
             background-size: cover;
+            background-position: center;
         }
     }
     
