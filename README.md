@@ -5,6 +5,7 @@
 
 <h3>WORKS BEST ON CHROME</h3>
 <p>Mobile loading is very slow. ScrollMagic setPin() seems to have a bug in Safari.</p>
+<p>Viewable at: https://priya-bhatti.github.io/Doughnut_Mockup/ </p>
 
 <h3>Desktop:</h3>
 <img src="donut_desktop.gif">
