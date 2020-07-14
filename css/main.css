@@ -314,10 +314,10 @@ section {
   position: relative;
   background-image: url(../images/donut_stock.png);
   height: 100vh;
-  background-attachment: fixed;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: cover;
+  background-attachment: fixed;
 }
 
 .about {

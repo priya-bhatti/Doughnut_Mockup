@@ -75,14 +75,16 @@ var controller = new ScrollMagic.Controller();
 
 
 var scene = new ScrollMagic.Scene({
-        duration: 1000,
+        duration: 800,
         triggerElement: "intro",
-        triggerHook: 0
-    }).setPin(intro)
+        triggerHook: 0,
+        offset: 0
+    })
+    .setPin('.intro')
     .setTween(tween)
     .addTo(controller);
 
 
-$("form.move input[name=duration]:radio").change(function() {
+$("form.move input[name=duration]:radio").scroll(function() {
     scene.duration($(this).val());
 });
