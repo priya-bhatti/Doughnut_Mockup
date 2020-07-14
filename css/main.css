@@ -127,7 +127,7 @@ nav {
   display: flex;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .burger {
     display: none;
   }
@@ -312,7 +312,7 @@ section {
 
 .parallax {
   position: relative;
-  background-image: url(../images/donut_stock.png);
+  background-image: url(../images/donut_stock_mobile.png);
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -387,6 +387,12 @@ section {
 }
 
 @media screen and (min-width: 800px) {
+  .parallax {
+    background-image: url(../images/donut_stock.png);
+  }
+}
+
+@media screen and (min-width: 1000px) {
   section {
     display: -ms-grid;
     display: grid;
